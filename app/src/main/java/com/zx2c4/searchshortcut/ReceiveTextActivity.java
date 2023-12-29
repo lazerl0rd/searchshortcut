@@ -25,7 +25,7 @@ public class ReceiveTextActivity extends Activity {
         }
 
         Intent searchIntent = new Intent(Intent.ACTION_VIEW);
-        searchIntent.setData(Uri.parse("https://www.google.com/search?q=" + Uri.encode(text.toString())));
+        searchIntent.setData(Uri.parse("https://duckduckgo.com/?q=" + Uri.encode(text.toString())));
         searchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
             getApplicationContext().startActivity(searchIntent);
